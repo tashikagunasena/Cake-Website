@@ -1,0 +1,146 @@
+========== HEADER & NAV ==========
+✅.nav__logo
+Delizia
+
+✅.nav__link
+Home - About Us - Products - New - Contact
+
+
+========== HOME SECTION ==========
+✅.home__title
+Best Custom <span>Cakes Bakery</span>
+
+✅.home__description
+We create handcrafted cakes made with love, premium ingredients, 
+and a touch of magic. Because life's sweetest moments deserve to be 
+celebrated in a special way.
+
+✅.button
+Explore Our Cakes
+
+✅.home__cake - alt
+Delicious decorated cake
+
+
+========== ABOUT SECTION ==========
+✅.section__title
+Our Passion For <br> Baking Cakes
+
+✅.about__description
+We are a bakery specializing in homemade desserts, custom cakes, 
+brownies, and a wide variety of gourmet sweets. Our passion for baking 
+allows us to create perfect sweet experiences for celebrations, special 
+events, or simply to enjoy anytime.
+
+✅.button
+View our products
+
+✅.about__img - alt
+Pastry team creating cakes
+
+
+========== PRODUCTS SECTION ==========
+✅.section__title
+Our Products
+
+✅.product__button
+Strawberry - Vanilla - Chocolate - Dried fruit - Others
+
+✅.product__img - alt
+Handmade cake made with quality ingredients
+
+✅.product__name
+Strawberry Shortcake
+Fresh Strawberry Cream
+Strawberry Delight Cake
+
+Classic Vanilla Bean Cake
+Vanilla Buttercream Cake
+Soft Vanilla Sponge Cake
+
+Chocolate Fudge Cake
+Dark Chocolate Velvet Cake
+Triple Chocolate Cake
+
+Peanut And Banana Cake
+Filled Walnut Cake
+Glazed Pecan Cake
+
+Chocolate Brownie
+Cream Cupcake
+Lemon Cake
+
+✅.product__price
+$15.99
+
+
+========== NEW SECTION ==========
+✅.section__title
+Try Our <br> New Creations
+
+✅.new__description
+Discover the latest from our artisanal pastry shop, where we constantly 
+add new desserts and homemade cakes, made with fresh, high-quality 
+ingredients.
+
+✅.new__button
+Order your cake now
+
+✅.new__text
+DELICIOUS
+
+✅.new__cake - alt
+Delicious decorated cake
+
+✅.new__name
+Premium Chocolate Cake
+Premium Vanilla Cake
+Premium Cherry Cake
+Premium Blueberry Cake
+Premium Raspberry Cake
+
+
+========== CONTACT SECTION ==========
+✅.section__title
+Order Your <br> Custom Cake Now!
+
+✅.contact__title ✅.contact__address
+Location:
+128th Street Avenue, <br> Miraflores, Lima - Peru
+
+Call Us:
++1234-9876-00
++00987654321
+
+  tel:+1234-9876-00
+  tel:+00987654321
+
+Operational:
+Monday - Saturday: 9am - 8pm
+Sunday: 9am - 6pm
+
+  itemscope itemtype="https://schema.org/LocalBusiness"
+  itemprop="openingHours" content="Mo-Sa 09:00-20:00"
+  itemprop="openingHours" content="Su 09:00-18:00"
+
+Messages:
+https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!
+https://m.me/bedimcode
+mailto:delizia@email.com
+
+✅.contact__map
+<!-- Insert your location into Google Maps (https://www.google.com/maps) -->
+<!-- Click Share -> Embed Map -> Copy HTML -->
+
+
+========== FOOTER ==========
+✅.footer__logo
+Delizia
+
+✅.footer__social
+https://www.facebook.com/bedimcode
+https://www.instagram.com/bedimcode/
+https://x.com/bedimcode/
+
+✅.footer__copy
+&#169; All Rights Reserved By Bedimcode
