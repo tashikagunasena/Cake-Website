@@ -47,7 +47,7 @@ const swiperHome = new Swiper(".home__swiper", {
     },
   },
   autoplay: {
-    deplay: 3000,
+    delay: 2000,
     disableOnInteraction: false,
   },
 });
@@ -63,8 +63,47 @@ const scrollHeader = () => {
 window.addEventListener("scroll", scrollHeader);
 
 /*=============== PRODUCTS SWIPER ===============*/
+const swiperTabs = new Swiper(".product__tabs", {
+  slidesPerView: "auto",
+});
+
+const swiperProducts = new Swiper(".product__content", {
+  loop: true,
+  spaceBetween: 32,
+  thumbs: {
+    swiper: swiperTabs,
+  },
+});
 
 /*=============== NEW SWIPER ===============*/
+const swiperNew = new Swiper(".new__swiper", {
+  loop: true,
+  grabCursor: true,
+  centeredSlides: "auto",
+  slidesPerView: "auto",
+  speed: 600,
+  effect: "creative",
+  creativeEffect: {
+    limitProgress: 2,
+    prev: {
+      translate: ["-32%", 0, 0],
+      scale: 0.58,
+    },
+    next: {
+      translate: ["32%", 0, 0],
+      scale: 0.58,
+    },
+  },
+
+  navigation: {
+    nextEl: ".new .swiper-button-next",
+    prevEl: ".new .swiper-button-prev",
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+});
 
 /*=============== SHOW SCROLL UP ===============*/
 
