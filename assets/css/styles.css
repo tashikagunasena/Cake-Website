@@ -6,14 +6,14 @@
   --header-height: 3.5rem;
 
   /* Colors */
-  --first-color: hsl(350, 70%, 65%);
-  --first-color-alt: hsl(350, 70%, 62%);
-  --second-color: hsl(350, 40%, 20%);
-  --title-color: hsl(350, 28%, 15%);
-  --text-color: hsl(350, 25%, 28%);
+  --first-color: hsl(28, 70%, 62%);
+  --first-color-alt: hsl(0, 0%, 1%);
+  --second-color: hsl(28, 40%, 20%);
+  --title-color: hsl(28, 28%, 15%);
+  --text-color: hsl(28, 25%, 28%);
   --white-color: hsl(0, 0%, 100%);
-  --body-color: hsl(350, 95%, 90%);
-  --container-color: hsl(350, 100%, 97%);
+  --body-color: hsl(28, 95%, 90%);
+  --container-color: hsl(28, 100%, 97%);
 
   /* Font and typography */
   --body-font: "Montserrat", sans-serif;
@@ -225,7 +225,7 @@ img {
     background-color: var(--body-color);
     width: 80%;
     height: 100%;
-    box-shadow: -2px 0 16px hsla(350, 70%, 20%, 0.1);
+    box-shadow: -2px 0 16px hsla(28, 70%, 20%, 0.1);
     z-index: var(--z-fixed);
     transition: right 0.4s;
   }
@@ -238,7 +238,7 @@ img {
 
 /* Change header styles */
 .scroll-header {
-  box-shadow: 0 2px hsla(350, 70%, 20%, 0.1);
+  box-shadow: 0 2px hsla(28, 70%, 20%, 0.1);
 }
 
 /* Active link */
@@ -383,7 +383,7 @@ img {
 
 .button:hover {
   background-color: var(--first-color-alt);
-  box-shadow: 0 4px 24px hsla(350, 70%, 65%, 0.5);
+  box-shadow: 0 4px 24px hsla(28, 70%, 65%, 0.5);
 }
 
 /*=============== ABOUT SECTION ===============*/
@@ -482,7 +482,7 @@ img {
   bottom: 1.5rem;
   mask-image: linear-gradient(
     to bottom,
-    hsl(350, 70%, 65%) 85%,
+    hsl(28, 70%, 65%) 85%,
     transparent 95%
   );
 }
@@ -492,7 +492,7 @@ img {
   background-color: var(--white-color);
   color: var(--title-color);
   padding: 0.5rem 0.75rem;
-  box-shadow: 0 4px 24px hsla(350, 70%, 20%, 0.1);
+  box-shadow: 0 4px 24px hsla(28, 70%, 20%, 0.1);
   font-weight: 600;
   font-size: var(--small-font-size);
   border-radius: 4rem;
@@ -517,7 +517,7 @@ img {
   padding: 14rem 1.5rem 2rem;
   border-radius: 1.5rem;
   overflow: hidden;
-  box-shadow: 0 8px 16px hsla(350, 70%, 20%, 0.1);
+  box-shadow: 0 8px 16px hsla(28, 70%, 20%, 0.1);
   transition: transform 0.4s;
 }
 
@@ -538,7 +538,7 @@ img {
   right: 0;
   left: 0;
   margin-inline: auto;
-  filter: drop-shadow(0 8px 16px hsla(350, 70%, 8%, 0.2));
+  filter: drop-shadow(0 8px 16px hsla(28, 70%, 8%, 0.2));
   transition: transform 0.4s;
 }
 
@@ -567,7 +567,7 @@ img {
   color: var(--title-color);
   font-size: 1.5rem;
   border-radius: 0.75rem;
-  box-shadow: 0 4px 16px hsla(350, 70%, 65%, 0.3);
+  box-shadow: 0 4px 16px hsla(28, 70%, 65%, 0.3);
   display: grid;
   place-items: center;
   cursor: pointer;
@@ -602,7 +602,7 @@ img {
 
 .product__tabs .swiper-slide-thumb-active {
   background-color: var(--first-color);
-  box-shadow: 0 4px 16px hsla(350, 70%, 65%, 0.5);
+  box-shadow: 0 4px 16px hsla(28, 70%, 65%, 0.5);
 }
 
 /*=============== NEW SECTION ===============*/
@@ -685,7 +685,7 @@ img {
 }
 
 .new .swiper-slide-active .new__cake {
-  filter: drop-shadow(0 8px 16px hsla(350, 70%, 8%, 0.2));
+  filter: drop-shadow(0 8px 16px hsla(28, 70%, 8%, 0.2));
 }
 
 .new .swiper-slide-active .new__name {
@@ -873,15 +873,15 @@ img {
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
   width: 0.6rem;
-  background-color: hsl(350, 40%, 75%);
+  background-color: hsl(28, 40%, 75%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: hsl(350, 40%, 65%);
+  background-color: hsl(28, 40%, 65%);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: hsl(350, 40%, 55%);
+  background-color: hsl(28, 40%, 55%);
 }
 
 /*=============== SCROLL UP ===============*/
@@ -890,7 +890,7 @@ img {
   right: 1rem;
   bottom: -50%;
   background-color: var(--body-color);
-  box-shadow: 0 4px 16px hsla(350, 70%, 20%, 0.2);
+  box-shadow: 0 4px 16px hsla(28, 70%, 20%, 0.2);
   color: var(--title-color);
   display: inline-flex;
   padding: 6px;
@@ -1034,8 +1034,8 @@ img {
   }
 
   .home__balloons {
-    width: 140px;
-    top: -7rem;
+    width: 240px;
+    top: -10rem;
     right: -1rem;
   }
 
