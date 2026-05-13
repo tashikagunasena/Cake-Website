@@ -1,12 +1,11 @@
-/*=============== GOOGLE FONTS - Insert link for typography ===============*/
+/*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
+  /* Colors */
   --first-color: hsl(350, 70%, 65%);
   --first-color-alt: hsl(350, 70%, 62%);
   --second-color: hsl(350, 40%, 20%);
@@ -16,8 +15,7 @@
   --body-color: hsl(350, 95%, 90%);
   --container-color: hsl(350, 100%, 97%);
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
+  /* Font and typography */
   --body-font: "Montserrat", sans-serif;
   --second-font: "Pacifico", cursive;
   --biggest-font-size: 3rem;
@@ -29,13 +27,13 @@
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 
-  /*========== Font weight ==========*/
+  /* Font weight */
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
   --font-bold: 700;
 
-  /*========== z index ==========*/
+  /* z index */
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -122,6 +120,7 @@ img {
 .section {
   padding-block: 5rem 1rem;
 }
+
 .section__title {
   text-align: center;
   font-size: var(--bigger-font-size);
@@ -173,22 +172,6 @@ img {
   cursor: pointer;
 }
 
-/* Navigation for mobile devices <> */
-@media (width <= 1150px) {
-  .nav__menu {
-    position: fixed;
-    top: 0;
-    right: -120%;
-    background-color: var(--body-color);
-    width: 80%;
-    height: 100%;
-    box-shadow: -2px 0 16px hsla(350, 70%, 20%, 0.1);
-    z-index: var(--z-fixed);
-    transition: right 0.4s;
-  }
-}
-
-/* Mobile menu panel adjustments */
 .nav__menu {
   padding: 2rem 1.5rem;
   display: flex;
@@ -197,27 +180,8 @@ img {
 
 .nav__list {
   flex: 1;
-  padding-left: 1rem; /* Indent the links */
+  padding-left: 1rem;
   margin-top: 3rem;
-}
-
-.nav__close {
-  position: absolute;
-  top: 1rem;
-  right: 1.5rem;
-  font-size: 1.8rem;
-  color: var(--title-color);
-  cursor: pointer;
-  background: none;
-  border: none;
-}
-
-.nav__img {
-  width: 80px;
-  opacity: 0.5;
-}
-
-.nav__list {
   display: flex;
   flex-direction: column;
   row-gap: 2.5rem;
@@ -233,11 +197,38 @@ img {
   color: var(--first-color);
 }
 
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.8rem;
+  color: var(--title-color);
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
 .nav__img {
   position: absolute;
   width: 100px;
   right: 1.5rem;
   bottom: 1.5rem;
+  opacity: 0.5;
+}
+
+/* Navigation for mobile devices */
+@media (width <= 1150px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -120%;
+    background-color: var(--body-color);
+    width: 80%;
+    height: 100%;
+    box-shadow: -2px 0 16px hsla(350, 70%, 20%, 0.1);
+    z-index: var(--z-fixed);
+    transition: right 0.4s;
+  }
 }
 
 /* Show menu */
@@ -246,7 +237,7 @@ img {
 }
 
 /* Change header styles */
-.scoll-header {
+.scroll-header {
   box-shadow: 0 2px hsla(350, 70%, 20%, 0.1);
 }
 
@@ -328,6 +319,11 @@ img {
   position: absolute;
 }
 
+.home__swiper {
+  width: 100%;
+  height: 100%;
+}
+
 .home__swiper .home__article img {
   position: initial;
   width: 300px;
@@ -370,12 +366,6 @@ img {
   width: 30px;
   top: 6rem;
   right: 1.25rem;
-}
-
-/* Swiper class */
-.home__swiper {
-  width: 100%;
-  height: 100%;
 }
 
 /*=============== BUTTON ===============*/
@@ -496,6 +486,7 @@ img {
     transparent 95%
   );
 }
+
 /*=============== PRODUCTS SECTION ===============*/
 .product__button {
   background-color: var(--white-color);
@@ -591,7 +582,7 @@ img {
 .product__card:hover .product__img {
   transform: translateY(-0.5rem);
 }
-/* Swiper class */
+
 .product .swiper {
   overflow: initial;
 }
@@ -615,7 +606,6 @@ img {
 }
 
 /*=============== NEW SECTION ===============*/
-
 .new__container {
   row-gap: 5rem;
   padding-bottom: 3rem;
@@ -686,7 +676,7 @@ img {
   top: -3rem;
   left: 2rem;
 }
-/* Swiper class */
+
 .new__swiper {
   width: 100%;
   height: 100%;
@@ -742,17 +732,17 @@ img {
   padding-bottom: 3rem;
 }
 
-.contact__map iframe {
-  width: 100%;
-  height: 100%;
-}
-
 .contact__map {
   width: 320px;
   height: 280px;
   justify-self: center;
   border-radius: 1.5rem;
   overflow: hidden;
+}
+
+.contact__map iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .contact__content .section__title {
@@ -822,6 +812,14 @@ img {
   overflow: hidden;
 }
 
+.footer__container {
+  position: relative;
+}
+
+.footer__container img {
+  position: absolute;
+}
+
 .footer__logo {
   font-size: var(--bigger-font-size);
   font-family: var(--second-font);
@@ -850,14 +848,6 @@ img {
   text-align: center;
   margin-top: 1.5rem;
   font-size: var(--small-font-size);
-}
-
-.footer__container {
-  position: relative;
-}
-
-.footer__container img {
-  position: absolute;
 }
 
 .footer__leaf-1 {
@@ -916,13 +906,12 @@ img {
   transform: translateY(-0.5rem);
 }
 
-/* Show Scroll Up */
 .show-scroll {
   bottom: 3rem;
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For small devices <> */
+/* For small devices */
 @media (width <= 360px) {
   .home__images {
     width: 250px;
@@ -934,7 +923,7 @@ img {
   }
 }
 
-/* For medium devices <> */
+/* For medium devices */
 @media (width >= 540px) {
   .home__container,
   .about__container,
@@ -948,6 +937,7 @@ img {
     grid-template-columns: 350px;
     justify-content: center;
   }
+
   .footer__blob {
     width: 500px;
   }
@@ -968,6 +958,7 @@ img {
   .product__cards {
     grid-template-columns: repeat(2, 350px);
   }
+
   .footer__blob {
     width: 800px;
     bottom: -3rem;
@@ -985,19 +976,8 @@ img {
   }
 }
 
-/* For large devices <> */
+/* For large devices */
 @media (width >= 1150px) {
-  .scrollup {
-    right: 3rem;
-    padding: 10px;
-    font-size: 1.8rem;
-    border-radius: 1rem;
-  }
-
-  .show-scroll {
-    bottom: 4rem;
-  }
-
   .container {
     margin-inline: auto;
   }
@@ -1027,16 +1007,20 @@ img {
     align-items: center;
     padding-block: 6rem 1rem;
   }
+
   .home__data {
     text-align: initial;
     margin-bottom: 5rem;
   }
+
   .home__title {
     margin-bottom: 1.5rem;
   }
+
   .home__description {
     margin-bottom: 4rem;
   }
+
   .home__slice-1 {
     width: 70px;
     left: -6rem;
@@ -1107,15 +1091,17 @@ img {
     width: 40px;
     left: 10rem;
   }
-  .about__cupcake-2 {
-    width: 150px;
-    left: -2.5rem;
-    bottom: -2.5rem;
-  }
+
   .about__cupcake-1 {
     width: 150px;
     right: -2.5rem;
     top: -2.5rem;
+  }
+
+  .about__cupcake-2 {
+    width: 150px;
+    left: -2.5rem;
+    bottom: -2.5rem;
   }
 
   .about__container {
@@ -1228,8 +1214,8 @@ img {
     padding-block: 3rem 4rem;
   }
 
-  .new__data .section__title,
-  .new__data {
+  .new__data,
+  .new__data .section__title {
     text-align: initial;
   }
 
@@ -1342,25 +1328,6 @@ img {
     justify-self: flex-end;
   }
 
-  .footer {
-    padding-block: 4.5rem 10rem;
-  }
-
-  .footer__container {
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-  }
-
-  .footer__logo {
-    font-size: var(--h2-font-size);
-    justify-self: flex-start;
-  }
-
-  .footer__social {
-    order: 1;
-    justify-self: flex-end;
-  }
-
   .footer__leaf-2 {
     width: 40px;
     left: 10rem;
@@ -1369,10 +1336,17 @@ img {
 
   .scrollup {
     right: 3rem;
+    padding: 10px;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+  }
+
+  .show-scroll {
+    bottom: 4rem;
   }
 }
 
-/* For 2K resolutions <> */
+/* For 2K resolutions */
 @media (width >= 2048px) {
   body {
     zoom: 120%;
