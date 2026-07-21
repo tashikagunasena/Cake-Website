@@ -6,14 +6,14 @@
   --header-height: 3.5rem;
 
   /* Colors */
-  --first-color: hsl(28, 70%, 62%);
-  --first-color-alt: hsl(0, 0%, 1%);
-  --second-color: hsl(28, 40%, 20%);
-  --title-color: hsl(28, 28%, 15%);
-  --text-color: hsl(28, 25%, 28%);
+  --first-color: hsl(350, 70%, 65%);
+  --first-color-alt: hsl(350, 70%, 62%);
+  --second-color: hsl(350, 40%, 20%);
+  --title-color: hsl(350, 28%, 15%);
+  --text-color: hsl(350, 25%, 28%);
   --white-color: hsl(0, 0%, 100%);
-  --body-color: hsl(28, 95%, 90%);
-  --container-color: hsl(28, 100%, 97%);
+  --body-color: hsl(350, 95%, 90%);
+  --container-color: hsl(350, 100%, 97%);
 
   /* Font and typography */
   --body-font: "Montserrat", sans-serif;
@@ -180,6 +180,7 @@ img {
 
 .nav__list {
   flex: 1;
+  padding-bottom: 50px;
   padding-left: 1rem;
   margin-top: 3rem;
   display: flex;
